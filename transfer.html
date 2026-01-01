@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfer</title>
+    <style>
+        body{
+           background-color: aliceblue;
+        }
+        h2{
+            color:red;
+            text-align:center;
+        }
+        p{
+            color:red;
+            text-align:center;
+        }
+        form{
+            text-align:center;
+        }
+        a.active{
+            color:black;
+        }
+    </style>    
+</head>
+<body>
+    <h2>transfer here</h2>
+    <p>{{msg}}</p>
+    <form method='POST' action="/transfer">
+        <label>Account number</label>
+        <input type"number" name="recieiveraccount"  min='1000' required>
+        <label>enter amount</label>
+        <input type="text" name="amount"  min='1' required>
+        <button type="submit">transfer</button>
+
+    </form>
+    <a href="/dashboard"> back to dashboard</a>
+</body>
+</html>

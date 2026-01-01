@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>withdraw</title>
+    <style>
+        body{
+           background-color: aliceblue;
+        }
+        h2{
+            color:red;
+            text-align:center;
+        }
+        p{
+            color:red;
+            text-align:center;
+        }
+        form{
+            text-align:center;
+        }
+        a.active{
+            color:black;
+        }   
+    </style>
+</head>
+<body>
+    <h2>withdraw here</h2>
+    <p>{{msg}}</p>
+    <form method='POST' action="/withdraw">
+        <label>enter amount</label>
+        <input type="text" name="amount"  min='1' required>
+        <button type="submit">withdraw</button>
+
+    </form>
+    <a href="/dashboard"> back to dashboard</a>
+</body>
+</html>
